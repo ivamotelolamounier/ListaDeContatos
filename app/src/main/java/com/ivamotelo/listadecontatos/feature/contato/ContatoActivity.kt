@@ -23,13 +23,21 @@ class ContatoActivity : BaseActivity() {
 
     private fun setupContato(){
         idContato = intent.getIntExtra("index",-1)
-        if (idContato == -1){
-            btnExcluirContato.visibility = View.GONE
+        if (idContato == -1){                                           // Se igual -1 será uma criação
+            btnExcluirContato.visibility = View.GONE                    // Esconde o botão 'excluir'
             return
         }
-        progress.visibility = View.VISIBLE
-        Thread(Runnable {
-            Thread.sleep(1500)
+        /**
+         * Uma forma de um processo dividir a si mesmo em duas ou mais tarefas que podem ser
+         * executadas concorrencialmente.  API runOnUiThread como um atalho, seguro e recomendado,
+         * de acesso à thread principal de um aplicativo Android.
+         * Aqui é implementado o conceito de loading
+         * O uso de @runnable em 'return' é necessário, uma vez que não retorna nada, voltando
+         * para a thread (Runnable)
+         */
+        progress.visibility = View.VISIBLE                              // Se diferente -1, então Edição ou pesquisa
+        Thread(Runnable {                                               // mostra a progressBar
+            Thread.sleep(1000)
             var lista = ContatoApplication.instance.helperDB?.buscarContatos("$idContato",true) ?: return@Runnable
             var contato = lista.getOrNull(0) ?: return@Runnable
             runOnUiThread {
@@ -50,7 +58,7 @@ class ContatoActivity : BaseActivity() {
         )
         progress.visibility = View.VISIBLE
         Thread(Runnable {
-            Thread.sleep(1500)
+            Thread.sleep(1000)
             if(idContato == -1) {
                 ContatoApplication.instance.helperDB?.salvarContato(contato)
             }else{
@@ -63,12 +71,16 @@ class ContatoActivity : BaseActivity() {
         }).start()
     }
 
+    /**
+     * Com o uso da biblioteca descontinuada 'kotlinx.android.synthetic', na activity_contato.xml
+     * foi configurado o 'android:onClick="onClickExcluirContato"', para a função abaixo
+     */
     fun onClickExcluirContato(view: View) {
-        if(idContato > -1){
+        if(idContato > -1){                             // verifica se é um novo contato
             progress.visibility = View.VISIBLE
             Thread(Runnable {
-                Thread.sleep(1500)
-                ContatoApplication.instance.helperDB?.deletarCoontato(idContato)
+                Thread.sleep(1000)
+                ContatoApplication.instance.helperDB?.deletarContato(idContato)
                 runOnUiThread {
                     progress.visibility = View.GONE
                     finish()

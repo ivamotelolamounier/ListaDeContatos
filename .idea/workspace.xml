@@ -13,7 +13,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db0e1e8-d37a-4f2e-9c8a-4ce1742b1597" name="Default Changelist" comment="Commit inicial&#10;Bootcamp DIO - Carrefour&#10;Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2" />
+    <list default="true" id="3db0e1e8-d37a-4f2e-9c8a-4ce1742b1597" name="Default Changelist" comment="Commit inicial&#10;Bootcamp DIO - Carrefour&#10;Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/application/ContatoApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/application/ContatoApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/feature/contato/ContatoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/feature/contato/ContatoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/feature/listacontatos/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/feature/listacontatos/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/helpers/HelperDB.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ivamotelo/listadecontatos/helpers/HelperDB.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632783751163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2">
+      <created>1632830871624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632830871624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,12 +157,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial&#10;Bootcamp DIO - Carrefour&#10;Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial&#10;Bootcamp DIO - Carrefour&#10;Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2" />
+    <MESSAGE value="Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvimento Integrado de Dados com SQLite no Android&#10;Resumo do código do App básico - Parte 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1632784352124">
+    <state x="301" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1632830890698">
       <screen x="46" y="27" width="1320" height="741" />
     </state>
-    <state x="301" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/46.27.1320.741@46.27.1320.741" timestamp="1632784352124" />
+    <state x="301" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/46.27.1320.741@46.27.1320.741" timestamp="1632830890698" />
   </component>
 </project>
